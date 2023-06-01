@@ -1,1 +1,82 @@
-/* 
+:root {
+  --side-padding: 0 24px;
+
+  --first-color: #a2faa3;
+  --second-color: #92c9b1;
+  --third-color: #2e5273;
+  --neutral-color: #131200;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* NavBar Styles */
+
+.navBar {
+  width: 100%;
+  height: auto;
+  padding: var(--side-padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #13120015;
+}
+
+.logoImg {
+  width: 85px;
+  cursor: pointer;
+}
+
+.logoImg:hover {
+  -webkit-animation: logoImg 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: logoImg 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+.actionCall-burger-container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.contactButton {
+  background-color: var(--first-color);
+  color: var(--neutral-color);
+}
+
+.contactButton:hover {
+  background-color: #6bc06e;
+}
+
+@-webkit-keyframes logoImg {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+}
+@keyframes logoImg {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+}
+
+/* NavBar Styles */
