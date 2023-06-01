@@ -1,34 +1,34 @@
 import './App.css'
-import { MantineProvider, Burger, Button } from '@mantine/core'
+import { MantineProvider, Button } from '@mantine/core'
 
-import { useDisclosure } from '@mantine/hooks';
+import { NavBar } from './components/navBar'
 
 function App() {
 
-  function NavBar() {
-    const [opened, { toggle }] = useDisclosure(false);
-    const label = opened ? 'Close navigation' : 'Open navigation';
+  function Header() {
 
     return (
-      <nav className='navBar'>
-        <a>
-          <img src="/images/logo.png" alt="Web Logo" className='logoImg' />
-        </a>
-
-        <div className='actionCall-burger-container'>
-          <Button radius="md" size="xs" uppercase className='contactButton'>
-            Hablemos
-          </Button>
-
-          <Burger opened={opened} onClick={toggle} aria-label={label} />
+      <header className='header'>
+        <h1>Salud Legal</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. In temporibus facilis ab qui
+          asperiores provident</h2>
+        <Button variant="outline" radius="md" size="xs" uppercase className='contactButton-outline'>
+          Hablemos
+        </Button>
+        <div className='icons-container'>
+          <img src="images/health.svg" alt="Cruz que representa la salud" />
+          <img src="images/law.svg" alt="Martillo que representa el ámbito legal" />
+          <img src="images/balance.svg" alt="Balanza que representa la justicia" />
         </div>
-      </nav>
+      </header>
     )
   }
+
 
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS>
       <NavBar />
+      <Header />
     </MantineProvider >
   )
 }
