@@ -10,8 +10,13 @@ function App() {
     return (
       <header className='header'>
         <h1>Salud Legal</h1>
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. In temporibus facilis ab qui
-          asperiores provident</h2>
+
+        <div className='header-h2s-container'>
+          <h2>Más 20 años de trayectoría</h2>
+          <h2>Profesionalismo y capacidad de anticipación</h2>
+          <h2>Servicio y gestión personalizada</h2>
+        </div>
+
         <Button variant="outline" radius="md" size="xs" uppercase className='contactButton-outline'>
           Hablemos
         </Button>
