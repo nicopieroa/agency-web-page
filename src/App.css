@@ -1,5 +1,6 @@
 :root {
   --side-padding: 0 24px;
+  --topBottom-padding: 24px;
 
   --first-color: #a2faa3;
   --second-color: #92c9b1;
@@ -32,6 +33,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
 
   border-bottom: 1px solid #13120015;
 }
@@ -239,5 +244,62 @@
 .articlesContainer::-webkit-scrollbar:horizontal {
   display: none;
 }
-
 /* Main Styles */
+
+/* Footer Styles */
+.footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #131200f1;
+  color: var(--first-color);
+  padding: var(--side-padding);
+  padding-top: var(--topBottom-padding);
+  padding-bottom: var(--topBottom-padding);
+}
+
+.footer-logoContainer {
+  width: 72px;
+}
+
+.footer-logoContainer img {
+  width: 100%;
+}
+
+.webLinks {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8px;
+}
+
+.webLinks a {
+  width: 100%;
+  color: var(--first-color);
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.contact-socialMedia {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-socialMedia a {
+  width: 28px;
+}
+.contact-socialMedia a:hover {
+  width: 32px;
+  cursor: pointer;
+}
+
+.contact-socialMedia a img {
+  width: 100%;
+}
+/* Footer Styles */

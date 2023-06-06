@@ -4,6 +4,7 @@ import { MantineProvider } from '@mantine/core'
 import { NavBar } from './components/navBar'
 import { Header } from './components/header'
 import { Main } from './components/main'
+import { Footer } from './components/footer'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <NavBar />
         <Header />
         <Main />
+        <Footer />
       </div>
     </MantineProvider >
   )

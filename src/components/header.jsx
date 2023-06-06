@@ -3,7 +3,7 @@ import { Button } from '@mantine/core'
 export function Header() {
 
     return (
-        <header className='header'>
+        <header id='home' className='header'>
             <h1>Salud Legal</h1>
 
             <div className='header-h2s-container'>

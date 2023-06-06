@@ -7,7 +7,7 @@ export function NavBar() {
 
     return (
         <nav className='navBar'>
-            <a>
+            <a href='#home'>
                 <img src="/images/logo.png" alt="Web Logo" className='logoImg' />
             </a>
 
