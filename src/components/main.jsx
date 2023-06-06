@@ -5,7 +5,7 @@ export function Main() {
     return (
         <main className='main'>
             <section id="¿Quiénes Somos?" className='whoWeAre-container'>
-                <h1>¿Quiénes Somos?</h1>
+                <h2>¿Quiénes Somos?</h2>
 
                 <p>Salud Legal es una organización especializada principalmente en la
                     representación institucional de empresas y organizaciones que se dedican
@@ -16,14 +16,14 @@ export function Main() {
             </section>
 
             <section id="¿Qué Ofrecemos?" className='wahtWeOffer-container'>
-                <h1>¿Qué ofrecemos?</h1>
+                <h2>¿Qué ofrecemos?</h2>
 
                 <p>Ofrecemos un asesoramiento jurídico-lega constante, buscando medios alternativos
                     que lleven a paliar, evitar y minimizar todo tipo de conflictos relacionados.</p>
             </section>
 
             <section id="Novedades" className='articlesSection'>
-                <h1>Novedades </h1>
+                <h2>Novedades </h2>
 
                 <div className='articlesContainer'>
                     <Article />
